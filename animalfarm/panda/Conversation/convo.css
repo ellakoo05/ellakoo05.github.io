@@ -1,0 +1,299 @@
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height:1;
+    background-color: #fffdd1;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    text-align: left;
+}
+
+
+/*TRIANGLE FOR FARM ANIMAL*/
+section#sample.sample001 .messageView .mv-contents .mv-name{
+    
+    width: 0;
+	height: 0;
+	border: 30px solid transparent;
+	border-top: 30px solid #fcaf67;
+    position: absolute;
+    top: 37%;
+    left: 65%;
+    z-index:20;
+}
+
+/*TRIANGLE FOR MAINCHARACTER*/
+section#sample.sample001 .messageView.left .mv-name{
+    left:auto;
+    left:25%;
+}
+
+section#sample.sample001 .messageView .mv-contents .mv-comment{
+    width: 60%;
+    height: 30%;
+    max-width: 800px;
+    position: absolute;
+    top: 10%;
+    left:0;
+    right:0;
+    margin: auto;
+    box-sizing:border-box;
+    padding:20px 30px 10px;
+    background:#fff;
+    border-radius:40px;
+    color:#000;
+    font-size: 1.5em;
+    font-weight: 700;
+    z-index:10;
+    box-shadow: 6px 6px 6px rgba(50, 50, 50, 0.4);
+    border: 7px solid #fcaf67;
+}
+
+
+section#sample.sample001 .messageView .mv-contents .mv-comment .pointer{
+    position:absolute;
+    right:30px;
+    bottom:0;
+    width:40px;
+    height:34px;
+    background:url(img/down.svg) no-repeat;
+    background-size:40px auto;
+    animation:pointer-anime 1s ease-in-out infinite;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#character{
+    width: 20%;
+    position:absolute;
+    left:15%;
+    bottom:20%;
+}
+
+#farm_animal{
+    position: absolute;
+    bottom:20%;
+}
+
+.cow{
+    width: 35%;
+    right: 10%;
+}  
+
+.alpaca {
+    width: 25%;
+    right: 15%;
+}  
+
+.rabbit {
+    width: 15%;
+    right: 20%;
+}
+
+.pig{
+    width: 30%;
+    right: 10%;
+}
+
+.sheep{
+    width: 28%;
+    right: 15%;
+}
+
+.chicken{
+    width: 25%;
+    right: 15%;
+}
+
+
+.farm_container{
+    width: 100vw;
+    height: 100vh;
+    max-width: 990px;
+    max-height: 768px; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+.backgroundImage {
+    width: 100vw;
+    height: 100vh;
+    max-width: 990px;
+    max-height: 768px; 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    box-shadow: 10px 10px 6px rgba(155, 152, 97, 0.3);
+    
+}
+
+
+
+
+section.messageView{
+    position:relative;
+    width:700px;
+    height:20pc;
+    margin:5pc auto 20px;
+    cursor:pointer
+}
+section.messageView .mv-contents{
+    padding:5pc 0 0;
+}
+
+
+section.messageView .mv-contents .mv-comment{
+    position:relative;
+    box-sizing:border-box;
+    margin-top:50px;
+    height:10pc;
+    padding:20px 30px 10px;
+    background:rgba(33,54,94,.7);
+    border-radius:8px;
+    color:#fff;
+    z-index:10;
+}
+
+
+section.messageView .mv-contents .mv-image.character{
+    position:absolute;
+    right:-62px;
+    top:-111px;
+    z-index:1;
+}
+
+section.messageView .mv-contents .mv-image.character img{
+    display:block;
+    width:300px;
+}
+
+
+@-webkit-keyframes pointer-anime{
+    0%{transform:translate3d(0,0,0) scale(1);opacity:0}
+    0.1%{transform:translate3d(0,-18px,0) scale(1.1);opacity:0}
+    30%,50%,94%{transform:translate3d(0,0,0) scale(1);opacity:1}
+    40%{transform:translate3d(0,-4px,0) scale(1);opacity:1}
+    100%{transform:translate3d(0,0,0) scale(1);opacity:0}
+}
+
+
+#skip_btn {
+    width:9%;
+    border-radius: 50%;
+    box-shadow: 3px 3px 6px rgba(20, 20, 20, 0.4);
+    cursor: pointer;
+    position:absolute;
+    left: 5%;
+    top: 5%;
+}
+
+#skip_btn:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+.skip_convo {
+    position: absolute;
+    left: 17%;
+    top: 5%;
+	display: inline-block;
+ 	margin:;
+	padding-top:1em ;
+	height: 6%;
+ 	width: 25%;
+ 	color: #555;
+	font-size: 1.3em;
+	background: rgba(150, 150, 150, 0.5);
+    border-radius: 15px;
+    display: none;
+    text-align:center;
+    z-index: 999;
+}
+
+.skip_convo:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -30px;
+ 	margin-top: -15px;
+	border: 15px solid transparent;
+	border-right: 15px solid content: "";
+	position: absolute;
+	top: 50%;
+	left: -30px;
+ 	margin-top: -15px;
+	border: 15px solid transparent;
+	border-right: 15px solid rgba(150, 150, 150, 0.5);
+    
+}
+
+
+
+span {
+    color: blue;
+}
+
+
+@media screen and (max-width:812px){
+#character{
+    width: 15%;
+    position:absolute;
+    left:30%;
+    bottom:25%;
+}
+
+#farm_animal{
+    position: absolute;
+    right: 30%;
+    bottom:25%;
+}
+    
+    
+.cow{
+    width: 18%;
+}  
+
+.alpaca {
+    width: 10%;    
+}    
+    
+    #skip_btn {
+    font-size: 1em;
+}
+    
+    section#sample.sample001 .messageView .mv-contents .mv-comment{
+    font-size: 1em;
+}
+    
+    section#sample.sample001 .messageView .mv-contents .mv-name{
+    
+	border: 20px solid transparent;
+	border-top: 20px solid #fccf2d;
+    top: 30%;
+    left: 63%;
+}
+    
+    section#sample.sample001 .messageView.left .mv-name{
+    left:auto;
+    left:30%;
+}
+    
+    
+
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Conversations</title>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="../../panda/Conversation/convo.css" rel="stylesheet" type="text/css" media="screen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../../panda/Conversation/convo.js" type="text/javascript"></script>
+        <script>
+            
+        //CONVERSATIONS
+            
+        document.addEventListener("DOMContentLoaded", function() {
+            var message = new MessageViewer({
+                "data": [{
+                    "side_class": "left",
+                    "message":"Hi, I’m <span>Penguin</span>, <br>How are… what are you doing???"
+                },
+                {
+                     "side_class": "right",
+                    "message":"(Chewing) Hi, I’m <span>rabbit</span>. I’m just <span>eating</span>.<br> Why are you so shocked?"
+                },
+                {
+                    "side_class": "left",   
+                    "message":"Because you are eating your…"
+                },
+                {
+                    
+                    "message":"your…"
+                },
+                {
+                    
+                    "message":"<span>POO</span>!"
+                },
+                {
+                     "side_class": "right",
+                    "message":"Oh, haha. This is for my <span>health</span>.<br>My main food is vegetables, but <span>I can’t get all the nutrients all at once</span>."
+                },
+                {
+                    
+                    "message":"That’s why I eat again <span>to gain more nutrients</span>!<br>You can try it!"
+                },
+                {
+                     "side_class": "left",
+                    "message":"No thanks."
+                }],
+                "option": {
+                    "loop": false
+                }
+            });
+        }, false);
+            
+           
+            
+            
+    </script>
+        
+        
+    </head>
+    
+    <body>
+        <div class="farm_container">
+        <img src = "../../img/bg/bg.svg"  class="backgroundImage"/>
+        <a href="../farm/farm.html"><img src="../../img/items/go-back-arrow.svg" id="skip_btn"></a>
+            <div id="skip_convo" class="skip_convo">
+                SKIP CONVERSATION
+            </div>
+        
+        <section id="sample" class="sample001">
+            
+            
+                <div class="container">
+                    
+                    <a href="../../penguin/farm/farm.html">
+                    <div class="messageView" id="default">
+                        <div class="mv-contents">
+                            <p class="mv-name"></p>
+                            <div class="mv-comment">
+                                <p class="val"></p>
+                                <p id="next" class="pointer"></p>
+                            </div>
+                            <p class="mv-image character"></p>
+                            
+                            <img src="../../img/characters/penguin.svg" id="character" class="animal" />
+                    <img src="../../img/farm_animals/rabbit.svg" id="farm_animal" class="animal rabbit" />
+                            
+                        </div>
+                    </div>
+            </a>
+            </div>               
+            </section>
+        </div>
+    
+        <script>
+        
+        //SKIP CONVO
+
+        var Skip = document.getElementById("skip_btn"),
+            msg = document.getElementById("skip_convo");
+
+
+        Skip.addEventListener("mouseover", function() {
+                msg.style.display = "block";
+        });
+
+        Skip.addEventListener("mouseout", function() {
+                msg.style.display = "none";
+        });
+
+
+        
+        </script>  
+        
+        
+        
+    </body>
+    
+    
+</html>

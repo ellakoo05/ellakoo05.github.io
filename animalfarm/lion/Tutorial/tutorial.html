@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tutorial</title>
+        <link rel="stylesheet" href="../../panda/Tutorial/tutorial.css" />
+        <link rel="stylesheet" href="../../top/top.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Coiny|Quicksand" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <div class="farm_container">
+        <img src = "../../img/bg/bg.svg"  class="backgroundImage"/>
+        
+        <h1 class="header">HOW TO PLAY BABY ANIMAL FARM?</h1>
+            
+        <div id="container">
+        
+            <div id="tutorial1" class="tutorial">
+                <h2>Swipe or Touch, and Move the Character!</h2>
+                <img src="img/tutorial1.svg" class="img" />
+                <img src="img/finger.svg" id="finger" class="finger1" />
+                <div id="btn1" class="btn tutorial_btn">NEXT</div>
+                
+            </div>
+            
+            <div id="tutorial2" class="tutorial">
+                <h2>Touch Animals and Talk!</h2>
+                <img src="img/tutorial2.svg" class="img" />
+                <img src="img/finger.svg" id="finger2" class="finger" />
+                <div id="btn2" class="btn tutorial_btn">NEXT</div>
+            </div>
+            
+            <div id="tutorial3" class="tutorial">
+                <h2>Touch EXIT and Let's Try Quiz!</h2>
+                <img src="img/tutorial3.svg" class="img" />
+                <img src="img/finger.svg" id="finger3" class="finger" />
+                <div id="btn3" class="btn tutorial_btn">NEXT</div>
+            </div>
+            
+            <div id="tutorial4" class="tutorial">
+                <h2>In quiz section, tap note icon!<br>
+                    You can check hints about animals<br> you talked in the farm!</h2>
+                <img src="../../img/items/pad.svg" class="icon" />
+                <img src="img/finger.svg" id="finger4" class="finger" />
+                <a href="../farm/farm.html"><div id="btn4" class="btn tutorial_btn">Let's Go!</div></a>
+                
+            </div>
+        
+        </div>
+        </div>
+        
+        <script>
+            var tut1 = document.getElementById("tutorial1"),
+                tut2 = document.getElementById("tutorial2"),
+                tut3 = document.getElementById("tutorial3");
+
+            document.getElementById("btn1").onclick = function() {
+                tut1.classList.add("fadeout"); 
+                setTimeout(function() {
+                    tut1.style.display = "none"; 
+                }, 500); 
+            }
+
+            document.getElementById("btn2").onclick = function() {
+                tut2.classList.add("fadeout"); 
+                setTimeout(function() {
+                    tut2.style.display = "none"; 
+                }, 500); 
+            }
+            
+            document.getElementById("btn3").onclick = function() {
+                tut3.classList.add("fadeout"); 
+                setTimeout(function() {
+                    tut3.style.display = "none"; 
+                }, 500); 
+            }
+        </script>
+    </body>
+    
+</html>    

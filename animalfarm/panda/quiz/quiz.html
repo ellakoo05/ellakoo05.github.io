@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quiz</title>
+        <link rel="stylesheet" href="quiz.css">
+        <link rel="stylesheet" href="../../top/top.css" />
+        <link href="https://fonts.googleapis.com/css?family=Coiny|Quicksand" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        
+        <div class="farm_container">
+        <img src = "../../img/bg/bg.svg"  class="backgroundImage"/>
+        
+        <div class="container">
+        
+            <div id="question"></div>
+            
+            <ul id="answers">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            
+            <div id="btn" class="disabled">Next</div>
+            <div id="result">
+                <p>Score: 6/6</p>
+<!--                <a href="">Replay?</a>-->
+                <div id="congra" class="button">
+                    <a href="../Congratu/congratu.html" >WELL DONE!</a>
+                </div>
+                <div id="fail" class="button">
+                    <a href="../Lost/lost.html">Oh NO</a>
+                </div>    
+            </div>
+            
+            
+        </div>
+            
+            <img src="../../img/items/pad.svg" id="memo" class="memo hint" />
+            <a href="../farm/farm.html"><img src="../../img/items/go-back-arrow.svg" id="back_arrow"></a>
+                    <div id="back_to_farm" class="back_to_farm">
+                        Back To Farm
+                    </div>
+            
+            <div id="memo_container" class="container">
+            
+                <h2 class="memo_title">FARM ANIMAL MEMO</h2>
+                <p class="hints"><span class="bold">COW:</span> <span id="cow_hint">???</span></p>
+                <p class="hints"><span class="bold">ALPACA: </span><span id="alpaca_hint">???</span></p>
+                <p class="hints"><span class="bold">RABBIT: </span><span id="rabbit_hint">???</span></p>
+                <p class="hints"><span class="bold">PIG: </span><span id="pig_hint">???</span></p>
+                <p class="hints"><span class="bold">SHEEP: </span><span id="sheep_hint">???</span></p>
+                <p class="hints"><span class="bold">CHICKEN:</span> <span id="chicken_hint">???</span></p>
+                
+<!--
+                <div class="btn_container">
+                   
+                    <button id="clear" class="btn">Clear Note</button>
+                </div>
+-->
+                
+            </div>
+        
+        </div>
+        
+        
+        <script>
+        
+        //Q & A    
+            
+            var quizSet = [
+            {q: "Cow makes....", a: ["Milk", "Mushroom", "Towel"]},
+            {q: "Alpaca fur is used to make", a: ["Sweaters", "Wigs", "Chocolate"]},
+            {q: "Why does rabbit exist in this farm?", a: ["For playing with people", "For fighting", "For singing"]},
+            {q: "Pig cooks...?", a: ["Bacon", "Sushi", "Salad"]},
+            {q: "Sheep’s fleece is used for", a: ["Clothes", "Coconut", "Medicine"]},
+            {q: "Chicken produces", a: ["Eggs", "Pancakes", "Music Shows"]}
+        ];
+            
+            
+             //HINT
+
+     var cow = localStorage.getItem("HintCow"),
+         alpaca = localStorage.getItem("HintAlpaca"),
+         rabbit = localStorage.getItem("HintRabbit"),
+         pig = localStorage.getItem("HintPig"),
+         sheep = localStorage.getItem("HintSheep"),
+         chicken = localStorage.getItem("HintChicken");
+            
+            if(cow) {
+                cow = JSON.parse(cow);
+                document.getElementById("cow_hint").innerHTML = "Cow makes something liquidy!";
+            } 
+
+            if(alpaca)  {
+                alpaca = JSON.parse(alpaca);
+                document.getElementById("alpaca_hint").innerHTML = "Alpaca makes something very warm.";
+            }
+
+            if(rabbit)  {
+                rabbit = JSON.parse(rabbit);
+                document.getElementById("rabbit_hint").innerHTML = "Rabbit loves people!";
+            }
+            
+            if(pig)  {
+                pig = JSON.parse(pig);
+                document.getElementById("pig_hint").innerHTML = "It is made from part of pig’s body.";
+            }
+            
+            if(sheep)  {
+                sheep = JSON.parse(sheep);
+                document.getElementById("sheep_hint").innerHTML = "Sheep makes something warm too.";
+            }
+            
+            if(chicken)  {
+                chicken = JSON.parse(chicken);
+                document.getElementById("chicken_hint").innerHTML = "Chicken produces something round.";
+            }
+            
+           
+            
+
+            
+
+            
+        </script>
+        <script src=quiz.js></script>
+    </body>
+    
+</html>    

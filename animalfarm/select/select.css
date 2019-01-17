@@ -1,0 +1,201 @@
+body {
+    color: #5b5b5b;
+}
+
+#select {
+    height: 70vh;
+    width: 70vw;
+    max-width: 800px;
+    max-height: 600px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #F9F9E4;
+    border-radius: 50px;
+    box-shadow: 10px 10px 6px rgba(50, 50, 50, 0.4);
+    overflow: hidden;
+    
+}
+
+.option {
+    height: 75%;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.select {
+    width: 8vw;
+    height: 8vh;
+    max-width: 80px;
+    max-height:80px;
+    position: fixed;
+    top:0;
+    bottom:0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+.previous {
+    position: absolute;
+    left: 20px;
+}
+
+#hprevious {
+    display: none;
+}
+
+#hnext {
+    display: none;
+}
+
+.next {
+   position: absolute;
+    right: 10px; 
+}
+
+
+.animals {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 10%;
+}
+
+h2 {
+    font-family: 'Coiny', cursive;
+    text-align: center;
+    font-size: 40px;
+    color:#7ad639
+}
+
+.decide {
+    width: 220px;
+    height: 40px;
+    font-size: 1.8em;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 7%;
+    margin: auto;
+}
+
+
+.descriptions {
+    height: 40%;
+    width: 50%;
+    position: absolute;
+    top: 0%;
+    right: 10%;
+}
+
+
+.name {
+    font-family: 'Coiny', cursive;
+    font-size: 1.8em;
+}
+
+.quotes {
+    font-weight: 1000;
+    font-size: 1.5em;
+    margin-top: -10%;
+}
+
+.details {
+    font-size: 1.2em;
+}
+
+#option2 {
+    display: none;
+}
+
+#option3 {
+    display: none;
+}
+
+.ToRight {
+    animation: ToRight 0.8s ease-out; 
+}
+
+@keyframes ToRight {
+    0% {transform:translate(0, 0);}
+    100%{transform:translate(300px, 0);}
+} 
+
+
+.ToLeft {
+    animation: ToLeft 0.8s ease-out; 
+}
+
+@keyframes ToLeft {
+    0% {transform:translate(0, 0);}
+    100%{transform:translate(-300px, 0);}
+} 
+
+
+
+
+@media screen and (max-width:812px){
+    
+    h2{
+        font-size: 1.3em;
+    }
+    
+    #select {
+        width: 55%;
+    }
+    
+    
+    .animals {
+        width: 15%;
+    }
+    
+    .name {
+       font-size: 1.1em; 
+    }
+    
+    .descriptions {
+        height: 40%;
+        width: 60%;
+        position: absolute;
+        top: 0%;
+        right: 10%;
+    }
+    
+    .quotes {
+        font-weight: 1000;
+        font-size: 0.8em;
+        margin-top: -20px;
+    }
+
+    .details {
+        font-weight: 1000;
+        font-size: 0.8em;
+    }
+    
+    .decide {
+        width: 80px;
+        height: 15px;
+        font-size: 0.7em;
+        position: absolute;
+        left: -60%;
+        bottom: 20%;
+        margin: auto;
+    }
+
+}
+
+
+
+

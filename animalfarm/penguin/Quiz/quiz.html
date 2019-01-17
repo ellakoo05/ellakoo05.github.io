@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quiz</title>
+        <link rel="stylesheet" href="../../panda/quiz/quiz.css">
+        <link rel="stylesheet" href="../../top/top.css" />
+        <link href="https://fonts.googleapis.com/css?family=Coiny|Quicksand" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        
+        <div class="farm_container">
+        <img src = "../../img/bg/bg.svg"  class="backgroundImage"/>
+        
+        <div class="container">
+        
+            <div id="question"></div>
+            
+            <ul id="answers">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            
+            <div id="btn" class="disabled">Next</div>
+            <div id="result">
+                <p>Score: 6/6</p>
+<!--                <a href="">Replay?</a>-->
+                <div id="congra" class="button">
+                    <a href="../Congratu/congratu.html" >WELL DONE!</a>
+                </div>
+                <div id="fail" class="button">
+                    <a href="../Lost/lost.html">OH NO...</a>
+                </div>    
+            </div>
+            
+            
+        </div>
+            
+            <img src="../../img/items/pad.svg" id="memo" class="memo hint" />
+            <a href="../farm/farm.html"><img src="../../img/items/go-back-arrow.svg" id="back_arrow"></a>
+                    <div id="back_to_farm" class="back_to_farm">
+                        Back To Farm
+                    </div>
+            <div id="memo_container" class="container">
+            
+                <h2 class="memo_title">FARM ANIMAL MEMO</h2>
+                <p class="hints"><span class="bold">COW:</span> <span id="cow_hint3">???</span></p>
+                <p class="hints"><span class="bold">ALPACA:</span> <span id="alpaca_hint3">???</span></p>
+                <p class="hints"><span class="bold">RABBIT:</span> <span id="rabbit_hint3">???</span></p>
+                <p class="hints"><span class="bold">PIG:</span> <span id="pig_hint3">???</span></p>
+                <p class="hints"><span class="bold">SHEEP:</span> <span id="sheep_hint3">???</span></p>
+                <p class="hints"><span class="bold">CHICKEN:</span> <span id="chicken_hint3">???</span></p>
+                
+<!--
+                <div class="btn_container">
+                    
+                    <button id="clear" class="btn">Clear Note</button>
+                </div>
+-->
+                
+            </div>
+        
+        </div>
+        
+        
+        <script>
+        
+        //Q & A    
+            
+            var quizSet = [
+            {q: "Cow's character is", a: ["Sensitive", "Agressive", "Crazy"]},
+            {q: "How many girlfriends did “Super Alpaca” have?", a: ["5 - 10 girlfriends", "One girlfriend", "No girlfriend..."]},
+            {q: "Why does rabbit eat their own poo?", a: ["For their health", "For fun", "For killing their time"]},
+            {q: "What does pig do for keeping clean their body?", a: ["Mud bath", "Bubble bath", "Oatmeal bath"]},
+            {q: "Why does sheep prefer to live with big group?", a: ["Because their personality is timid", "Because of saving money ", "Because sheep hates everyone"]},
+            {q: "Chickens are taught a lot of things by ", a: ["Their mother", "Their teachers", "Neighbor"]}
+        ];
+            
+            //HINT
+
+            var cow3 = localStorage.getItem("HintCow3"),
+                alpaca3 = localStorage.getItem("HintAlpaca3"),
+                rabbit3 = localStorage.getItem("HintRabbit3"),
+                pig3 = localStorage.getItem("HintPig3"),
+                sheep3 = localStorage.getItem("HintSheep3"),
+                chicken3 = localStorage.getItem("HintChicken3");
+            
+            if(cow3) {
+                cow3 = JSON.parse(cow3);
+                document.getElementById("cow_hint3").innerHTML = "Cows get stressed very easily.";
+            } 
+
+            if(alpaca3)  {
+                alpaca3 = JSON.parse(alpaca3);
+                document.getElementById("alpaca_hint3").innerHTML = "Alpaca Land allowed to have many girlfriends.";
+            }
+
+            if(rabbit3)  {
+                rabbit3 = JSON.parse(rabbit3);
+                document.getElementById("rabbit_hint3").innerHTML = "Rabbit can’t get all the nutrients all at once.";
+            }
+            
+            if(pig3)  {
+                pig3 = JSON.parse(pig3);
+                document.getElementById("pig_hint3").innerHTML = "It protects from bugs and keep the body clean.";
+            }
+            
+            if(sheep3)  {
+                sheep3 = JSON.parse(sheep3);
+                document.getElementById("sheep_hint3").innerHTML = "Sheep needs friends to stay with him.";
+            }
+            
+            if(chicken3)  {
+                chicken3 = JSON.parse(chicken3);
+                document.getElementById("chicken_hint3").innerHTML = " Chicken does homeschooling.";
+            }
+            
+           
+            
+            
+        </script>
+        <script src="../../panda/quiz/quiz.js"></script>
+    </body>
+    
+</html>    

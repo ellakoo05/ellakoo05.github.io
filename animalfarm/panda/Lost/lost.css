@@ -1,0 +1,154 @@
+.container {
+  font-family: 'Coiny', cursive; 
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;  
+  height: 100%;
+  background-color: rebeccapurple;
+  background-image: -webkit-linear-gradient(90deg, rebeccapurple 0%, steelblue 100%);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  overflow: hidden;
+  
+  
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: transparent;
+}
+
+
+.container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-radius: 100%;
+  background: transparent;
+  display: block;
+  
+  box-shadow: 0 0 150px 100px rgba(255, 255, 255, .6),
+              200px 0 200px 150px rgba(255, 255, 255, .6),
+              -250px 0 300px 150px rgba(255, 255, 255, .6),
+              550px 0 300px 200px rgba(255, 255, 255, .6),
+              -550px 0 300px 200px rgba(255, 255, 255, .6);
+}
+
+#lost {
+    font-size: 1.8em;
+    position:absolute;
+    top: 5%;
+}
+
+   
+.lost_btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    font-size: 0.6em;
+    cursor: pointer;
+    font-family: 'Coiny', cursive;
+    background-color: #FCE694;
+    text-align: center;
+    
+}
+
+.lost_btn:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+.btn_container {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    left: 22%;
+    margin: auto;
+    bottom: 5%;
+}
+
+.cry_animal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+}
+
+
+.tearB {
+    position:absolute;
+    top: 25%;
+    width: 13%;
+    animation: cryB 2.5s infinite ease-out;
+}
+
+@keyframes cryB{
+    0%{opacity:1;}
+    50%{opacity: 0;}
+    100%{opacity:1;}
+}
+
+.tearS{
+    width: 8%; 
+    position:absolute;
+    top: 45%;
+    animation: cryS 2.5s infinite ease-out;
+}
+
+@keyframes cryS{
+    0%{opacity:0;}
+    50%{opacity: 1;}
+    100%{opacity:0;}
+}
+
+.tearR{
+    right: 3%;
+    
+}
+
+.tearL{
+    left: 3%;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:812px){
+    .container h1 {
+        font-size:1.2em;
+        position: absolute;
+        top: 8%;
+    }
+    
+    .lost_btn {
+        width: 180px;
+        height: 30px;
+        font-size: 0.35em;
+    }
+    
+    .btn_container {
+        bottom: 5%;
+    }
+}

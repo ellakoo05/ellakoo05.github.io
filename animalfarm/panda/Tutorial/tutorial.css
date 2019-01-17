@@ -1,0 +1,235 @@
+body {
+    text-align: center;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header{
+    position: absolute;
+    top: 4%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: 'Coiny', cursive;
+    font-size: 2.2em;
+    color:#E2B779;
+    text-shadow: 0 1px 0 #7f5d38,
+                 0 2px 0 #7f5d38,
+                 0 3px 0 #7f5d38,
+                 0 4px 0 #7f5d38,
+                 0 5px 0 #7f5d38,
+                 0 6px 0 transparent,
+                 0 7px 7px rgba(0, 0, 0, .3);
+    animation: floating2 2.5s infinite ease-in-out;
+}
+
+@keyframes floating2 {
+    0%{transform: translate(0,0);}
+    50%{transform: translate(0,10px);}
+    100%{transform: translate(0,0);}
+}
+
+.tutorial {
+    height: 70vh;
+    width: 70vw;
+    max-width: 800px;
+    max-height: 600px;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #F9F9E4;
+    border-radius: 50px;
+    box-shadow: 8px 13px 6px rgba(100, 100, 100, 0.15);
+    transition: 0.7s ease-out;
+}
+
+h2 { 
+    font-family: 'Coiny', cursive;
+    margin:5% 0 5% 5% ;
+    font-size: 1.8em;
+    color: #7ad639;
+}
+
+#tutorial1 {
+    z-index: 4;
+}
+
+#tutorial2 {
+    z-index: 3;
+}
+
+#tutorial3 {
+    z-index: 2;
+}
+
+#tutorial4 {
+    z-index: 1;
+}
+
+
+.img {
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 20px;
+    
+}
+
+.icon {
+    width: 25%;
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 4px 7px 6px rgba(50, 50, 50, 0.3);
+}
+
+#finger {
+    z-index: 999; 
+}
+
+.tutorial_btn {
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    bottom: 5%;
+    right:0;
+    left: 0;
+    margin: auto;
+    font-size: 1.8em;
+}
+
+#finger2 {
+    bottom:125px;
+    left: 50%;
+}
+
+#finger3 {
+    bottom:200px;
+    left: 75%;
+}
+#finger4 {
+    bottom: 30%;
+}
+
+.finger1 {
+    position: absolute;
+    bottom:40%;
+    left: 300px;
+    width: 7%;
+    animation:finger1 2s infinite ease-out;
+}
+
+
+@keyframes finger1 {
+0% {transform:translate(0, 0);}
+25% {transform:translate(20px, 20px);}
+50%  {transform:translate(0, 0);}  
+100% {transform:translate(150px, 0px);}
+}
+
+.finger { 
+    width: 7%;
+    position: absolute;
+    animation: finger2 1s infinite linear;
+}
+
+@keyframes finger2 {
+    0% {transform:translate(0, 0);}
+    50% {transform:translate(20px, 20px);}
+    100% {transform:translate(0, 0);}
+}
+
+.fadeout {
+    animation : fadeOut 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width:812px) {
+    
+    h2{
+        font-size: 1.0em;
+    }
+    
+    .img {
+        width: 64%;
+        height: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 20px;
+
+    }
+    
+    
+    .tutorial {
+        width: 50%;
+    }
+    
+    .tutorial_btn {
+        width: 50px;
+        height: 20px;
+        position: absolute;
+        bottom: 5%;
+        right:0;
+        left: 0;
+        margin: auto;
+        font-size: 1em;
+    }
+    
+    #finger {
+        width: 10%;
+        position: absolute;
+        bottom:35%;
+        left: 40%;
+
+    }
+    
+    @keyframes finger1 {
+        0% {transform:translate(0, 0);}
+        25% {transform:translate(20px, 20px);}
+        50%  {transform:translate(0, 0);}  
+        100% {transform:translate(100px, 0px);}
+        }
+    
+    #finger3 {
+        width: 10%;
+        position: absolute;
+        bottom:35%;
+        left: 70%;
+
+    }
+
+
+}
+
+
+

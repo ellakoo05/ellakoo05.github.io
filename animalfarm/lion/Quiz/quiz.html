@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Quiz</title>
+        <link rel="stylesheet" href="../../panda/quiz/quiz.css">
+        <link rel="stylesheet" href="../../top/top.css" />
+        <link href="https://fonts.googleapis.com/css?family=Coiny|Quicksand" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        
+        <div class="farm_container">
+        <img src = "../../img/bg/bg.svg"  class="backgroundImage"/>    
+        
+        <div class="container">
+        
+            <div id="question"></div>
+            
+            <ul id="answers">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            
+            <div id="btn" class="disabled">Next</div>
+            <div id="result">
+                <p>Score: 6/6</p>
+<!--                <a href="">Replay?</a>-->
+                <div id="congra" class="button">
+                    <a href="../Congratu/congratu.html" >WELL DONE!</a>
+                </div>
+                <div id="fail" class="button">
+                    <a href="../Lost/lost.html">OH NO...</a>
+                </div>    
+            </div>
+            
+            
+        </div>
+            
+            <img src="../../img/items/pad.svg" id="memo" class="memo hint" />
+            <a href="../farm/farm.html"><img src="../../img/items/go-back-arrow.svg" id="back_arrow"></a>
+                    <div id="back_to_farm" class="back_to_farm">
+                        Back To Farm
+                    </div>
+            
+            
+            <div id="memo_container" class="container">
+            
+                <h2 class="memo_title">FARM ANIMAL MEMO</h2>
+                <p class="hints"><span class="bold">COW:</span> <span id="cow_hint2">???</span></p>
+                <p class="hints"><span class="bold">ALPACA:</span> <span id="alpaca_hint2">???</span></p>
+                <p class="hints"><span class="bold">RABBIT:</span> <span id="rabbit_hint2">???</span></p>
+                <p class="hints"><span class="bold">PIG:</span> <span id="pig_hint2">???</span></p>
+                <p class="hints"><span class="bold">SHEEP:</span> <span id="sheep_hint2">???</span></p>
+                <p class="hints"><span class="bold">CHICKEN:</span> <span id="chicken_hint2">???</span></p>
+                
+<!--
+                <div class="btn_container">
+                    <button id="clear" class="btn">Clear Note</button>
+                </div>
+-->
+                
+            </div>
+        
+        </div>
+        
+        
+        <script>
+        
+        //Q & A    
+            
+            var quizSet = [
+            {q: "How many hours does cow spend eating in a day?", a: ["About 6.5 hours", "About 2 hours", "About 10 seconds"]},
+            {q: "Alpaca’s favourite food includes", a: ["Herbs", "Mayonnaise", "Tuna"]},
+            {q: "What does rabbit like to eat, more than carrots?", a: ["Vegetable leaves", "Cake", "Meatballs"]},
+            {q: "Pig has a strong", a: ["Preference", "Muscle", "Heart"]},
+            {q: "Sheep gifted lion with what?", a: ["Hay cube", "May cube", "Rubik cube"]},
+            {q: "What is one of the common food for chicken?", a: ["Pellet", "Caramel", "Coca cola"]}
+        ];
+            
+            //HINT
+
+            var cow2 = localStorage.getItem("HintCow2"),
+                alpaca2 = localStorage.getItem("HintAlpaca2"),
+                rabbit2 = localStorage.getItem("HintRabbit2"),
+                pig2 = localStorage.getItem("HintPig2"),
+                sheep2 = localStorage.getItem("HintSheep2"),
+                chicken2 = localStorage.getItem("HintChicken2");
+            
+            if(cow2) {
+                cow2 = JSON.parse(cow2);
+                document.getElementById("cow_hint2").innerHTML = " Cows eats very slowly.";
+            } 
+
+            if(alpaca2)  {
+                alpaca2 = JSON.parse(alpaca2);
+                document.getElementById("alpaca_hint2").innerHTML = "Alpaca does not like fish.";
+            }
+
+            if(rabbit2)  {
+                rabbit2 = JSON.parse(rabbit2);
+                document.getElementById("rabbit_hint2").innerHTML = "Rabbit eats what is good for her health.";
+            }
+            
+            if(pig2)  {
+                pig = JSON.parse(pig2);
+                document.getElementById("pig_hint2").innerHTML = "Pig really likes specific things.";
+            }
+            
+            if(sheep2)  {
+                sheep = JSON.parse(sheep2);
+                document.getElementById("sheep_hint2").innerHTML = "Sheep eats hay.";
+            }
+            
+            if(chicken2)  {
+                chicken = JSON.parse(chicken2);
+                document.getElementById("chicken_hint2").innerHTML = " Chicken ate human made food.";
+            }
+            
+           
+            
+            
+        </script>
+        <script src="../../panda/quiz/quiz.js"></script>
+    </body>
+    
+</html>    

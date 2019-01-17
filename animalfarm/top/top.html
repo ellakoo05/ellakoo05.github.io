@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BABY ANIMAL FARM</title>
+        <link rel="stylesheet" href="top.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Coiny|Quicksand" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    
+    <body>
+        
+        <div class="farm_container">
+        <img src = "../img/bg/bg.svg"  class="backgroundImage"/>
+            
+        
+        <img src="../img/items/title_logo2.svg" class="title"> 
+        
+        <h1>
+            <span>A</span>
+            <span>N</span>
+            <span>I</span>
+            <span>M</span>
+            <span>A</span>
+            <span>L</span>
+            <span>&nbsp;</span>
+            <span>F</span>
+            <span>A</span>
+            <span>R</span>
+            <span>M</span>
+        </h1>
+        
+        
+        <img src="../img/characters/title_animal.svg" class="characters" />
+        
+         <a href="../select/select.html"><div class="btn start">START</div></a>
+        
+            
+            
+            
+        </div>
+         
+        
+        <!-- Portrait Screen Alert -->
+		
+		<section class="portrait hidden" id="portrait">
+			<div class="alert">
+				<img src="../img/items/BAFlogo.svg" alt="BABY">
+				<h2>Hello! Players!</h2>
+				<p>Thank you for playing BABY ANIMAL FARM!<br>
+                Continuing to play BABY ANIMAL FARM, can you turn your device on its side?</p>
+				<i class="fa fa-mobile"></i>
+			</div>
+		</section>
+        
+        <script src="top.js"></script>
+        
+        <script>
+            
+            var portScreen = document.getElementById("portrait");
+
+            if (window.innerHeight > window.innerWidth) {
+                portScreen.classList.remove("hidden");
+            }
+
+            $(window).on("orientationchange", function (event) {
+                $("#portrait").toggleClass("hidden");
+            });
+
+        
+        </script>
+        
+        
+        
+        
+        
+    </body>
+    
+</html>

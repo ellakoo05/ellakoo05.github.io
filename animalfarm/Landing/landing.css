@@ -1,0 +1,88 @@
+#logo {
+    background-image: url(../img/items/BAFlogo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 60vh;
+    margin: auto;
+    top: 0px;
+    bottom: 60px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+}
+
+#welcome {
+    font-family: Quicksand;
+    font-size: 30px;
+    position: absolute;
+    margin: auto;
+    left: 70px;
+    right: 50px;
+    bottom: 100px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: #B2F187;
+}
+
+a {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+
+#about, #about2, #start {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Quicksand;
+    background-color: #A0D9F3;
+    border-radius: 20px;
+    color: white;
+}
+
+#aboutPage {
+    width: 400px;
+    height: 260px;
+    border-radius: 100px;
+    font-size: 20px;
+    background-color: #F6B7C2;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    display:none;
+    border-color: white;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding: 100px;
+    z-index: 100;
+}
+
+@media screen and (max-width: 700px) {
+    #aboutPage {
+        width: 150px;
+        font-size: 12px;
+        padding: 70px;
+    }
+    
+    a {
+        font-size: 16px;
+    }
+    
+    #about2 {
+        width: 80px;
+        height: 25px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,322 @@
+
+
+body {
+    font-family: 'Coiny', cursive;
+    text-align: center;
+    background-color: #fffdd1;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    max-width: 1366px;
+    max-height: 900px; 
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 998;
+    font-family: 'Coiny', cursive;
+    display: none;
+}
+
+.tutorial {
+    height: 70vh;
+    width: 70%;
+    max-width: 800px;
+    max-height: 600px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #F9F9E4;
+    border-radius: 50px;
+    box-shadow: 15px 15px 6px rgba(50, 50, 50, 0.4);
+    transition: 0.7s ease-out;
+}
+
+.fadeout {
+    animation : fadeOut 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*
+#farm_container{
+    width: 100vw;
+    height: 100vh;
+    max-width: 1366px;
+    max-height: 768px; 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    overflow: hidden;
+}
+*/
+
+
+#backgroundImage {
+    width: 100vw;
+    height: 100vh;
+    max-width: 1366px;
+    max-height: 768px; 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    box-shadow: 10px 10px 6px rgba(155, 152, 97, 0.3);
+    
+}
+
+
+
+/*
+@media screen and (min-width:1025px){
+    #backgroundImage {
+        width: 100vw;
+        height: 100vh;
+        max-width: 1366px;
+        max-height: 768px; 
+        background-image: url(img/farm-web.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+
+*/
+
+#backgroundImage2 {
+    display: none;
+}
+
+@media screen and (max-width:1366px) and (min-width:824px){
+    #backgroundImage2 {
+        display: block;     
+    }
+    #backgroundImage {
+        display: none; 
+    }
+    
+    #container {
+        max-height: 1024px;
+    }
+      
+}
+
+
+#exit {
+   width:10%; 
+    position: absolute;
+    right: 5%;
+    top: 35%;
+}
+
+#go_quiz {
+    display: none;
+    z-index: 999
+}
+
+.fadein {
+    animation : fadeIn 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#header {
+    font-size: 45px;
+    color: #7ad639;
+}
+
+.ebtn {
+    display: inline-block;
+    padding: 1em 1em 0.5em 1em;
+    text-decoration: none;
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 40px;
+    width: 190px;
+    height: 80px;
+    margin: 10px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.ebtn:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+#yes {
+    background-color: #eda6ae;   
+}
+
+#no {
+    background-color: #5db9b4;
+}
+
+.btn_container {
+    height: 20vh;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+/*  FARM   */
+
+.farm_cow {
+    width:18%;
+    position: absolute;
+    bottom: 8%;
+    left: 15%;
+    animation: cow 9s infinite linear; 
+}
+
+
+
+@keyframes cow {
+    0% {transform:translate(0, 0);}
+    49.99%{transform:translate(-110px, 0);}
+    50%{transform:translate(-110px, 0) scale(-1, 1);}
+    100%{transform:translate(0, 0) scale(-1, 1);;}
+} 
+
+
+.farm_alpaca {
+    width:15%;
+    position: absolute;
+    bottom: 8%;
+    left: 45%;
+    animation: alpaca 2.8s infinite ease-in-out;
+}
+
+@keyframes alpaca {
+    
+    0%{transform: rotate(-5deg);}
+    50%{transform:rotate(5deg);}
+    100%{transform:rotate(-5deg);}
+    
+}
+
+.farm_rabbit {
+    width:10%;
+    position: absolute;
+    bottom: 8%;
+    right: 10%;
+    animation: rabbit .8s infinite ease-in-out;
+}
+
+@keyframes rabbit {
+    0%{transform: translate(0, 0);}
+    50%{transform: translate(0, -10px);}
+    100%{transform: translate(0, 0);}
+}
+
+.farm_pig {
+    width:13%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    animation: pig 1.3s infinite;
+}
+
+@keyframes pig {
+    0%{transform: translate(0, 0)rotate(0deg);}
+    50%{transform: translate(0, -5px)rotate(5deg);}
+    100%{transform: translate(0, 0)rotate(0deg);} 
+}
+
+.farm_sheep {
+    width:13%;
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    animation: cow 9s infinite linear,
+                alpaca 2.8s infinite ease-in-out; 
+}
+
+.farm_chicken {
+    width:13%;
+    position: absolute;
+    top: 7%;
+    right: 10%;
+    animation: alpaca 2.8s infinite ease-in-out;
+}
+
+@media screen and (max-width:823px){
+    
+    @keyframes cow {
+        0% {transform:translate(0, 0);}
+        49.99%{transform:translate(-50px, 0);}
+        50%{transform:translate(-50px, 0) scale(-1, 1);}
+        100%{transform:translate(0, 0) scale(-1, 1);;}
+    } 
+
+    #exit {
+       width:8%; 
+        position: absolute;
+        right: 9%;
+        top: 35%;
+    }
+    
+    .tutorial {
+        height: 70vh;
+        width: 60%;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+    
+    .ebtn {
+        width: 25%;
+        height: 40px;
+        font-size: 1.8em;    
+     }
+    
+    #header{
+        margin-top: 10%;
+        font-size: 1.5em;
+    }
+    
+
+}

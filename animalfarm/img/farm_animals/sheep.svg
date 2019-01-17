@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 353.2 313.3" style="enable-background:new 0 0 353.2 313.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D8BC7D;}
+	.st1{fill:#A88B43;}
+	.st2{fill:#F9E8B2;}
+	.st3{fill:#F9F0DC;}
+	.st4{fill:#C6AC63;}
+	.st5{fill:#231F20;}
+	.st6{fill:#FFFFFF;}
+	.st7{fill:none;stroke:#B78B29;stroke-width:0.6681;stroke-linecap:round;stroke-linejoin:round;}
+	.st8{fill:none;stroke:#B78B29;stroke-width:0.555;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<title>sheep</title>
+<g id="sheep">
+	<g id="legs">
+		<polygon class="st0" points="128.5,244.5 137.7,293.9 156.2,293.9 162.7,245.1 		"/>
+		<polygon class="st1" points="137.7,293.9 156.2,293.9 152.3,308.3 149.5,303.3 146.7,308.3 143.9,303.3 141.8,308.3 		"/>
+		<polygon class="st0" points="213,244.9 222.2,294.3 240.7,294.3 247.2,245.6 		"/>
+		<polygon class="st1" points="222.2,294.3 240.7,294.3 236.9,308.8 234,303.8 231.2,308.8 228.4,303.8 226.3,308.8 		"/>
+		<polygon class="st0" points="258.9,249.4 268,298.8 286.5,298.8 293,250.1 		"/>
+		<polygon class="st1" points="268,298.8 286.5,298.8 282.7,313.3 279.8,308.3 277,313.3 274.2,308.3 272.1,313.3 		"/>
+		<polygon class="st0" points="85.6,244.9 94.8,294.3 113.3,294.3 119.8,245.5 		"/>
+		<polygon class="st1" points="94.8,294.3 113.3,294.3 109.4,308.7 106.6,303.7 103.8,308.7 101,303.7 98.9,308.7 		"/>
+	</g>
+	<g id="body">
+		<path class="st2" d="M81.4,98.6h209.4c6.6,0,12,5.4,12,12v126.8c0,6.6-5.4,12-12,12H81.4c-6.6,0-12-5.4-12-12V110.6
+			C69.4,104,74.7,98.6,81.4,98.6z"/>
+		<circle class="st2" cx="94.1" cy="229.7" r="35.4"/>
+		<circle class="st2" cx="79.7" cy="209.5" r="35.4"/>
+		<circle class="st2" cx="49.9" cy="92.7" r="35.4"/>
+		
+			<ellipse transform="matrix(0.4193 -0.9078 0.9078 0.4193 -49.7416 179.0927)" class="st3" cx="115.1" cy="128.4" rx="71.6" ry="65.8"/>
+		<circle class="st2" cx="69.4" cy="63.2" r="35.4"/>
+		<ellipse class="st2" cx="115.1" cy="35.4" rx="40.7" ry="35.4"/>
+		<circle class="st2" cx="171.3" cy="70.9" r="35.4"/>
+		<circle class="st2" cx="180.2" cy="57.3" r="35.4"/>
+		<circle class="st2" cx="131.5" cy="57.3" r="35.4"/>
+		<circle class="st2" cx="144.8" cy="236" r="35.4"/>
+		<circle class="st2" cx="194.7" cy="236" r="35.4"/>
+		<circle class="st2" cx="246.9" cy="236" r="35.4"/>
+		<circle class="st2" cx="282.3" cy="236" r="35.4"/>
+		<circle class="st2" cx="311.4" cy="209.5" r="35.4"/>
+		<circle class="st2" cx="303.2" cy="121.5" r="35.4"/>
+		<circle class="st2" cx="255" cy="105.7" r="35.4"/>
+		<circle class="st2" cx="201" cy="105.7" r="35.4"/>
+		<circle class="st2" cx="317.7" cy="170.7" r="35.4"/>
+		<path class="st4" d="M163.6,97.9c34,10.8,55.7-25.2,39-40.6C202.7,57.3,217.2,95.7,163.6,97.9z"/>
+		<path class="st4" d="M109.1,71.9c34,10.8,55.7-25.2,39-40.6C148.1,31.3,162.7,69.7,109.1,71.9z"/>
+		<path class="st4" d="M35.8,59.3C32.4,94.8,72.1,108.5,83.7,89C83.7,89,49.2,111.2,35.8,59.3z"/>
+		<path class="st4" d="M245.6,138.8c34,10.8,55.7-25.2,39-40.6C284.6,98.1,299.2,136.5,245.6,138.8z"/>
+		<path class="st4" d="M223.8,141.1c33.6-12.2,28.9-53.9,6.2-56C230,85.1,264.9,106.6,223.8,141.1z"/>
+		<path class="st4" d="M275.1,145.3c18.6,30.5,58.6,17.6,56.1-5.1C331.2,140.3,317,178.8,275.1,145.3z"/>
+		<path class="st4" d="M288.7,168.5c-5.8,35.2,36.5,46,49.4,27.3C338.2,195.8,298.7,221.3,288.7,168.5z"/>
+		<path class="st4" d="M298.2,219.2c-34.1-10.8-52.3,23.4-35.6,38.9C262.6,258,244.6,221.5,298.2,219.2z"/>
+		<path class="st4" d="M168.7,258.7c33.4-12.6,26.6-50.8,3.9-52.6C172.6,206.1,209.4,223.7,168.7,258.7z"/>
+		<path class="st4" d="M49.5,197.7c-11,34,23,52.5,38.6,35.9C88.1,233.5,51.4,251.3,49.5,197.7z"/>
+		<path class="st4" d="M79.7,259.8c33.7,11.8,53-21.8,36.8-37.8C116.4,222,133.3,259.1,79.7,259.8z"/>
+		<path class="st4" d="M206.4,212.6c34.6-8.9,32-47.6,9.7-51.8C216.1,160.8,250.7,182.3,206.4,212.6z"/>
+		<path class="st4" d="M248.2,211.5c-35.7,0.2-42.7,38.3-22,47.9C226.2,259.4,197.9,230.1,248.2,211.5z"/>
+		<g>
+			<circle class="st5" cx="79.7" cy="117.1" r="13.3"/>
+			<circle class="st6" cx="76.6" cy="114.8" r="4.6"/>
+		</g>
+		<g>
+			<circle class="st5" cx="144.8" cy="132.8" r="13.3"/>
+			<circle class="st6" cx="140.5" cy="130.4" r="4.6"/>
+		</g>
+		<path class="st1" d="M96,154.9c-2.5,2.4,4.5,12.2,9.7,10.7s8.1-2.6,9.3-6S100.9,150.1,96,154.9z"/>
+		<path class="st7" d="M102.7,165.1c0,0,0.7,11.4,7.7,12.8"/>
+		<path class="st8" d="M103.5,163.9c0,0-7.4,11.1-11.8,10.2"/>
+	</g>
+	<path id="right_ear" class="st1" d="M179.5,105.8c0,0,65,26.7,38.5,53.8s-47.3-43.5-44.8-52.8C174.3,102.7,179.5,105.8,179.5,105.8
+		z"/>
+	<path id="left_year" class="st1" d="M44.8,94.8c0,0-65,26.7-38.5,53.8s47.3-43.5,44.8-52.8C50,91.7,44.8,94.8,44.8,94.8z"/>
+</g>
+</svg>

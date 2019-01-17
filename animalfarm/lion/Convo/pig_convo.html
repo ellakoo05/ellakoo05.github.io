@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Conversations</title>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="../../panda/Conversation/convo.css" rel="stylesheet" type="text/css" media="screen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../../panda/Conversation/convo.js" type="text/javascript"></script>
+        <script>
+            
+        //CONVERSATIONS
+            
+        document.addEventListener("DOMContentLoaded", function() {
+            var message = new MessageViewer({
+                "data": [{
+                    "side_class": "left",
+                    "message":"Hello, I am <span>Lion</span>.  I’m a <span>vegetarian</span>.<br>Please don’t be afraid of me."
+                },
+                {
+                     "side_class": "right",
+                    "message":"Haha, Ok! welcome to our farm!"
+                },
+                   {
+                    "slide_class": "left",   
+                    "message":"I have my vegetable lunch, do you want to eat together?"
+                },
+                {
+                     "side_class": "right",
+                    "message":"Sorry, I have my <span>preferences</span>. I don’t eat <span>all vegetables</span>.<br>Many think pigs eat everything, but we have <span>strong preferences</span>.<br>I only eat original blend vegetables."
+                },
+                {
+                    "side_class": "left",
+                    "message":"Wow, you are gourmet."
+                }],
+                "option": {
+                    "loop": false
+                }
+            });
+        }, false);
+            
+           
+            
+            
+    </script>
+        
+        
+    </head>
+    
+    <body>
+        <div class="farm_container">
+        <img src = "../../img/bg/bg.svg"  class="backgroundImage"/>
+        <a href="../farm/farm.html"><img src="../../img/items/go-back-arrow.svg" id="skip_btn"></a>
+            <div id="skip_convo" class="skip_convo">
+                SKIP CONVERSATION
+            </div>
+        
+        <section id="sample" class="sample001">
+            
+            
+                <div class="container">
+                    
+                    <a href="../../lion/farm/farm.html">
+                    <div class="messageView" id="default">
+                        <div class="mv-contents">
+                            <p class="mv-name"></p>
+                            <div class="mv-comment">
+                                <p class="val"></p>
+                                <p id="next" class="pointer"></p>
+                            </div>
+                            <p class="mv-image character"></p>
+                            
+                            <img src="../../img/characters/lion.svg" id="character" class="animal" />
+                    <img src="../../img/farm_animals/pig.svg" id="farm_animal" class="animal pig" />
+                            
+                        </div>
+                    </div>
+                    </a>
+            </div>               
+            </section>
+        </div>
+    
+        
+        <script>
+        
+        //SKIP CONVO
+
+        var Skip = document.getElementById("skip_btn"),
+            msg = document.getElementById("skip_convo");
+
+
+        Skip.addEventListener("mouseover", function() {
+                msg.style.display = "block";
+        });
+
+        Skip.addEventListener("mouseout", function() {
+                msg.style.display = "none";
+        });
+
+
+        
+        </script>  
+        
+        
+    </body>
+    
+    
+</html>
