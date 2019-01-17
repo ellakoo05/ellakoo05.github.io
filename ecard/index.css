@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+
+/*--------------------------MAIN---------------------------*/
+
+#background {
+    width: 1280px;
+    height: 720px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    background-image: url(img/background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: 3s;
+    overflow:hidden;
+    z-index: 0;
+}
+
+#LeftButton {
+    width: 80px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: coral;
+    color: white;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    font-size: 30px;
+    top: 350px;
+    left: 20px;
+    font-family: josefin slab;
+    border: none;
+}
+
+#RightButton {
+    width: 80px;
+    height: 60px;
+    border-radius: 50px;
+    position: absolute;
+    background-color: coral;
+    color: white;
+    right:0px;
+    z-index: 10;
+    text-align: center;
+    font-size: 30px;
+    top: 350px;
+    right: 20px;
+    font-family: josefin slab;
+    border: none;
+}
+
+#fullPage {
+    width:3840px;
+    height:720px;
+    position:absolute;
+    left:-1280px;
+    transition: 3s;
+}
+
+#facts {
+    width: 400px;
+    height: 220px;
+    background-color: lightgreen;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50px;
+    font-family: Josefin Slab;
+    font-size: 20px;
+    text-align: center;
+    display: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 100;
+}
+
+#overlay {
+    width: 3840px;
+    height: 720px;
+    background-color: white;
+    opacity: 0.5;
+    z-index: 90;
+    display: none;
+    position: absolute;
+}
+
+#exit {
+    width: 40px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    display: block;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-family: josefin slab;
+    color: green;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 5px;  
+}
+
+#balloonBG {
+    background-image: url(img/balloonMove.svg);
+    width: 3840px;
+    height: 720px;
+    top: 200px;
+    position: absolute;
+    background-size:contain;
+    background-repeat: no-repeat;
+    animation: upanddown 3s infinite;
+}
+
+
+/*--------------------CENTER PAGE COMPONENTS-----------------------*/
+
+#centerPage {
+    width:1280px;
+    height:720px;
+    display:block;
+    position:absolute;
+    left:1280px;
+}
+
+#title {
+    font-family: Josefin Slab;
+    font-size: 60px;
+    display: block;
+    font-weight: 700;
+    position:absolute;
+    top:330px;
+    left:300px;
+    width:100%;
+    height:100%;
+    animation: title 1.5s infinite;
+}
+
+#music {
+    width: 50px;
+    height: 45px;
+    background-color: coral;;
+    position:absolute;
+    border: none;
+    border-radius:30px;
+    font-family: Josefin Slab;
+    font-size: 20px;
+    color: white;
+    bottom: 60px;
+    left: 30px;
+    text-align: center;
+    background-image: url(img/mute.svg);
+    background-position: center;
+    background-size:auto 70%;
+    background-repeat: no-repeat;
+    z-index: 50;
+}
+
+
+/*--------------------LEFT PAGE COMPONENTS-----------------------*/
+
+
+#leftPage {
+    width:1280px;
+    height:720px;
+    position:absolute;
+    left:0px;
+    display:block;
+}
+
+#cheers {
+    width: 250px;
+    position: absolute;
+    right: 0px;
+    left: 520px;
+    top: 240px;
+    transition-delay: 3s;
+    display: block;
+    animation: blinking 1s infinite;
+}
+
+#girl {
+    width: 280px;
+    position: absolute;
+    bottom: 20px;
+    left: 350px;
+    transition: 2s;
+    display: block;
+    animation: cheers 1s infinite;
+    cursor: pointer;
+}
+
+#guy {
+    width: 245px;
+    position: absolute;
+    bottom: 10px;
+    left: 650px;
+    display: block;
+    transition: 2s;
+    animation: cheers1 1s infinite;
+    cursor: pointer;
+}
+
+#balloon {
+    width: 80px;
+    position: absolute;
+    top: 260px;
+    right: 250px;
+    display: block;
+    transition: 2s;
+    animation: shake 1s infinite;
+    cursor: pointer;
+}
+
+/*--------------------RIGHT PAGE COMPONENTS-----------------------*/
+
+
+#rightPage {
+    width:1280px;
+    height: 720px;
+    position:absolute;
+    display:block;
+    right: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+#church {
+    width: 100px;
+    position: absolute;
+    top: 160px;
+    left: 288px;
+    transition: 1s;
+    animation: pulse 1s infinite;
+    cursor: pointer;
+}
+
+#smallLeprechaun {
+    width: 80px;
+    transition: 1s;
+    position: absolute;
+    top: 280px;
+    right: 500px;
+    animation: rotation 1.5s infinite;
+    cursor: pointer;
+}
+
+#drummer1 {
+    width: 220px;
+    position: absolute;
+    bottom: 20px;
+    left: 300px;
+    transition: 1s;
+    animation: parade 10s infinite;
+    cursor: pointer;
+}
+
+#drummer2 {
+    width: 220px;
+    position: absolute;
+    bottom: 20px;
+    left: 550px;
+    transition: 1s;
+    animation: parade 10s infinite;
+    cursor: pointer;
+}
+
+#flag {
+    width: 300px;
+    position: absolute;
+    bottom: 20px;
+    right: 170px;
+    transition: 1s;
+    animation: parade 10s infinite;
+    cursor: pointer;
+}
+
+/*--------------------CHURCH PAGE COMPONENTS-----------------------*/
+
+
+#churchPage {
+    width: 1280px;
+    height: 720px;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: url(img/churchBG.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+    display: none;
+    z-index: 20;
+}
+
+#stpatty {
+    width: 350px;
+    position: fixed;
+    top: 125px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    cursor: pointer;
+
+}
+
+#stained1 {
+    width: 200px;
+    position: fixed;
+    top: 140px;
+    right: 200px;
+    cursor: pointer;
+}
+
+#stained2 {
+    width: 200px;
+    position: fixed;
+    top: 140px;
+    left: 200px;
+    cursor: pointer;
+}
+
+
+/*--------------------RAINBOW PAGE COMPONENTS-----------------------*/
+
+#rainbowPage {
+    width: 1480px;
+    height: 720px;
+    position: absolute;
+    top: 0px;
+    left:-10px;
+    right: 0px;
+    bottom: 0px;
+    background-image: url(img/rainbowpage.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+    display: none;
+    z-index: 20;
+}
+
+#backButton {
+    width: 80px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: coral;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border: none;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-family: josefin slab;
+    display:none;
+    z-index:50;
+    cursor: pointer;
+}
+
+#church2 {
+    top: 160px;
+    left: -30px;
+    width: 330px;
+    position: absolute;
+    animation: upanddown 4s infinite;
+    cursor: pointer;
+}
+
+#bigLeprechaun {
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    left: 350px;
+    top: 100px;
+    animation: shake 2s infinite;
+    cursor: pointer;
+}
+
+#potofGold {
+    width: 350px;
+    position: absolute;
+    right: 190px;
+    top: 200px;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+#shamrock {
+    width: 50px;
+    position: absolute;
+    right: 345px;
+    top: 430px;
+    animation: pulse 2s infinite;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#fourleaf {
+    width: 44px;
+    position: absolute;
+    right: 210px;
+    bottom: 230px;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+#fourleaf2 {
+    width: 80px;
+    position: absolute;
+    right: 210px;
+    bottom: 230px;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+    display: none;
+}
+
+#cloudy {
+    width: 140%;
+    height: 70vh;
+    position: absolute;
+    top: -150;
+    background-image: url(img/cloudsBG.svg);
+    opacity: 0.8;
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    background-size: 100%;
+    animation: cloud 30s linear infinite;
+}
+
+.golds {
+    position: absolute;
+    top: 0%;
+}
+/*----------------ANIMATION KEYFRAMES-----------------*/
+
+@keyframes blinking {
+    0% { opacity:  0; }
+    100% { opacity: 1; }
+}
+
+@keyframes upanddown {
+    0% { transform: translate(1); }
+    50% { transform: translateY(10px); }
+    100% { transform: translate(1); }
+}
+
+@keyframes title {
+    0% { color: white;}
+    25% { color: lightgreen;}
+    75% { color: darkgreen;}
+    100% { color: white;}
+}
+
+@keyframes rotation {
+    0% { transform: rotate(0);}
+    50% { transform: rotate(10deg);}
+    100% { transform: rotate(0);}
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1);}
+    100% { transform: scale(1);}
+}
+
+@keyframes cheers {
+    0% {transform: translate(1);}
+    100% {transform: translate(10px);}
+}
+
+@keyframes cheers1 {
+    0% {transform: translate(1);}
+    100% {transform: translate(-10px);}
+}
+
+@keyframes cloud {
+    0% { transform: translateX(1);}
+    50% { transform: translateX(100px);}
+    100% { transform: translateX(1);}
+ }
+
+@keyframes parade {
+    0% { transform: translate(-300px);}
+    25% { transform: rotate(-10deg);}
+    50% {transform: rotate(10deg); }
+    100% {transform: translate(150px);}
+}
+
+@keyframes shake {
+    10%, 90% {transform: translate3d(-1px, 0, 0);}
+    20%, 80% {transform: translate3d(2px, 0, 0);}
+    30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
+    40%, 60% {transform: translate3d(4px, 0, 0);}
+}
