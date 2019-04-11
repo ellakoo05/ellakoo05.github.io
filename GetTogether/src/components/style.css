@@ -1,0 +1,1226 @@
+* {
+  font-family: Nunito !important;
+}
+
+/* ------------- GetTogether Start Page ------------- */
+
+.wrapper {
+  background-image: url(../assets/davidBG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#logo {
+  display: block;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  transition: 0.5;
+}
+
+#logo_wave {
+  display: block;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.start-btn {
+  display: block;
+  font-family: 'Nunito', sans-serif, bold;
+  font-size: 1.25em;
+  font-weight: 600;
+  border: 3px solid #333;
+  border-radius: 500px;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.start-btn:hover {
+  background-color: white;
+  color: #333;
+  border: 3px solid
+}
+
+.start-details {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#footer {
+  text-align: center;
+  color: #ccc;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 40px;
+}
+
+/* ------------- GetTogether Login Page ------------- */
+
+
+#LeftSide {
+  background-image: url("../assets/eventRandom5.jpeg");
+  height: 100vh;
+  background-size: cover;
+  position: fixed;
+  left: 0px;
+}
+
+#RightSide {
+  font-family: 'Nunito';
+  background-color: white;
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  text-align: center;
+  color: dimgray;
+  right: 0;
+  top: 0;
+}
+
+.signupBox {
+  width: 300px;
+  height: 330px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+}
+
+.signupBox h2 {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.signupForm {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.inputs {
+  text-align: left;
+  border: none;
+  height: 30px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: Nunito;
+}
+
+/* ------------- GetTogether Event Form Page ------------- */
+
+.eventsLists {
+  height: 400px;
+  width: 100vw;
+  overflow: scroll;
+}
+
+#EventRightSide {
+  font-family: 'Nunito';
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  text-align: center;
+  color: black;
+  right: 0;
+  margin: auto;
+  padding: 0px;
+}
+
+#EventLeftSide {
+  font-family: 'Nunito';
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  color: black;
+  left: 0;
+  margin: auto;
+  padding: 0px;
+}
+
+.eventCreate {
+  width: 500px;
+  height: 100vh;
+  margin: auto;
+  font-family: Nunito;
+}
+
+.eventCreate h2 {
+  padding-left: 0px;
+  margin-top: 50px;
+}
+
+.eventCol {
+  margin-top: 40px;
+}
+
+.dashboard-btn-main {
+  width: 120px;
+  height: 30px;
+  background-color: lightsteelblue;
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  border-radius: 35px;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+#EventLeftSide .col-md-7 {
+  margin: auto;
+}
+
+.editCol .col-lg-6 {
+  margin: auto;
+}
+
+#EventLeftSide label {
+  font-size: 26px;
+  float: left;
+}
+
+
+/* ------------- GetTogether Edit Event Form Page ------------- */
+
+
+.EventInputs {
+  text-align: left;
+  border: solid 1px lightgray;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: Nunito;
+  display: inline-block;
+}
+
+
+#edit {
+  background:
+    url("../assets/bg2.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+#editForm .col-lg-5 {
+  margin: auto;
+  top: 50px;
+}
+
+@media only screen and (max-width: 760px) {
+  #editForm .col-lg-5 {
+    position: relative;
+    margin: 30px;
+  }
+}
+
+.EditEvent label {
+  font-size: 26px;
+  float: left;
+}
+
+
+.EditEvent.col-md-7,
+.EditEvent .col-lg-10 {
+  padding: 0px;
+}
+
+.EditEvent .col-lg-6 {
+  display: inline-block;
+}
+
+
+.EditEvent h2 {
+  text-align: center;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.EditEvent {
+  border: solid 5px dimgray;
+  background-color: white;
+  width: 500px;
+  height: 600px;
+  margin: auto;
+  font-family: Nunito;
+  filter: opacity(1);
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 40px;
+}
+
+
+#EventRightSide label {
+  font-size: 26px;
+  text-align: left;
+  float: left;
+}
+
+
+#EventLeftSide .col-md-5 {
+  padding: 0px;
+}
+
+#EventRightSide .col-md-5 {
+  margin: auto;
+  margin-top: 100px;
+}
+
+.date-time {
+  display: inline-block;
+  position: relative;
+}
+
+.eventForm {
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 450px;
+  height: 400px;
+}
+
+.editing {
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 450px;
+  height: 400px;
+  background-color: red;
+}
+
+
+/* ------------- GetTogether Dashboard Page ------------- */
+
+
+.eventForm .col-lg-12 {
+  padding: 0px;
+}
+
+.eventForm .col-lg-5 {
+  padding: 0px;
+}
+
+.eventImage {
+  background-image: url("../assets/thumbnailBG.jpg");
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 40px;
+  margin-right: 10px;
+  color: white;
+  font-size: 22px;
+  border-radius: 20px;
+}
+
+.eventDetail {
+  opacity: 0;
+  border-radius: 20px;
+  transition: .5s ease;
+  background-color: lightblue;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.eventDetailText {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.eventSelect-btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 35px;
+  background-color: white;
+  color: dimgray;
+  border: 3px solid steelblue;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  top: 120px;
+}
+
+.eventSelect-btn:hover {
+  background-color: steelblue;
+  color: white;
+}
+
+.eventImage:hover .eventDetail {
+  opacity: 1;
+}
+
+.title {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  top: 120px;
+}
+
+.joinButton {
+  font-size: 15px;
+  font-family: Nunito;
+  border-radius: 10px;
+  border-radius: 50px;
+  width: 100px;
+  border: 2px solid lightsteelblue;
+  height: 35px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: dimgray;
+  bottom: 40;
+  margin: auto;
+  background-color: white;
+}
+
+#joinBox {
+  width: 300px;
+  height: 330px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  font-family: Nunito;
+  text-align: left;
+}
+
+.vl {
+  border-left: 2px solid gray;
+  height: 100px;
+}
+
+@media only screen and (max-width: 500px) {
+
+  #leftSide,
+  #eventCreate {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+#eventLeft {
+  height: 100vh;
+  width: 50vw;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+#taskbutton {
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  margin: auto;
+  margin: 10px;
+}
+
+#taskListRight {
+  overflow: scroll;
+  font-family: 'Nunito';
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  text-align: left;
+  color: dimgray;
+  right: 0;
+  top: 0;
+  bottom: 0px;
+}
+
+#addingTask {
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 300px;
+  height: 200px;
+}
+
+#eventRight2 {
+  font-family: 'Nunito';
+  background-color: white;
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  text-align: center;
+  color: dimgray;
+  right: 0;
+  top: 0;
+}
+
+.signupButton {
+  font-size: 15px;
+  font-family: Nunito;
+  border-radius: 50px;
+  width: 200px;
+  height: 35px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 2px solid lightsteelblue;
+  margin: auto;
+  margin-bottom: 0px;
+  color: dimgray;
+  background-color: white;
+}
+
+.backtoLogin {
+  font-size: 15px;
+  font-family: Nunito;
+  border-radius: 50px;
+  width: 200px;
+  height: 35px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 2px solid lightsteelblue;
+  margin: auto;
+  margin-bottom: 40px;
+  color: dimgray;
+  background-color: white;
+}
+
+.partyButton {
+  font-size: 15px;
+  font-family: Nunito;
+  border-radius: 50px;
+  width: 200px;
+  height: 35px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid lightsteelblue;
+  margin: auto;
+  margin-bottom: 40px;
+  color: dimgray;
+  background-color: white;
+}
+
+.partyButton:hover,
+.signupButton:hover,
+.joinButton:hover,
+.backtoLogin:hover {
+  background-color: lightsteelblue;
+  color: white;
+  border: solid 2px lightsteelblue;
+}
+
+@media only screen and (max-width: 500px) {
+  #leftSide {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  #rightSide {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+#yourEvents {
+  margin-top: 50px;
+}
+
+#login,
+#getStarted,
+#event,
+#signup,
+#start_page,
+#eventdetails_page,
+#dashboard_page,
+#eventform_page
+#editForm {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+#rightCol {
+  width: 20vw;
+  height: 100vh;
+  background-color: seashell;
+  right: 0px;
+  top: 0px;
+  position: fixed;
+  -webkit-animation: mymove 0.8s linear;
+  /* Safari 4.0 - 8.0 */
+  animation: mymove 0.8s linear;
+  display: block;
+}
+
+@-webkit-keyframes mymove {
+  from {
+    right: -100px;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes mymove {
+  from {
+    right: -100px;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
+@-webkit-keyframes myNewmove {
+  from {
+    right: 0px;
+  }
+
+  to {
+    right: -260px;
+  }
+}
+
+@keyframes myNewmove {
+  from {
+    right: 0px;
+  }
+
+  to {
+    right: -260px;
+  }
+}
+
+h3 {
+  text-align: center;
+}
+
+.edit-btn {
+  width: 100px;
+  height: 40px;
+  font-family: 'Nunito', sans-serif, bold;
+  font-size: 1em;
+  font-weight: 600;
+  border: 3px solid lightsteelblue;
+  border-radius: 50px;
+  margin: auto;
+  display: inline-block;
+  margin-top: 30px;
+  position: relative;
+  margin-left: 20px;
+  color: dimgray;
+}
+
+.edit-btn:hover {
+  background-color: lightsteelblue;
+  color: white;
+}
+
+
+#rightSide {
+  font-family: 'Nunito';
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  text-align: center;
+  color: dimgray;
+}
+
+
+#eventLeft {
+  height: 100vh;
+  width: 50vw;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+
+h2 {
+  padding-left: 60px;
+  padding-top: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#eventnameInfo {
+  font-weight: 700;
+  font-family: Nunito;
+  font-size: 46px;
+}
+
+#eventdateInfo,
+#eventtimeInfo,
+#eventlocationInfo,
+#eventCodeInfo {
+  font-size: 24px;
+}
+
+
+#banner {
+  margin: 0;
+  background-color: lightblue;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+}
+
+#events {
+  width: 70vw;
+  background-color: #f2f2f2;
+  text-align: center;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.eventTile {
+  display: inline-block;
+  margin: 25px;
+  width: 300px;
+  height: 250px;
+  background-color: white;
+  padding: 90px;
+  border-radius: 30px;
+}
+
+.eventTile:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.3)),
+    url("../assets/eventRandom5.jpeg");
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#tasks {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  text-align: center;
+  overflow: scroll;
+}
+
+.taskSignup:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: solid 1px white;
+}
+
+.taskSignup {
+  border-radius: 20px;
+  width: 90px;
+  height: 35px;
+  margin: auto;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 14px;
+  background-color: white;
+  color: dimgray;
+  padding: 8px;
+  display: none;
+}
+
+.listItemsForUsers:hover .userList {
+  display: inline-block;
+}
+
+.userList {
+  border-radius: 20px;
+  width: 90px;
+  height: 35px;
+  margin: 5px;
+  text-align: center;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: dimgray;
+  padding: 8px;
+  display: none;
+}
+
+.userListForAdmin {
+  border-radius: 20px;
+  width: 90px;
+  height: 35px;
+  text-align: center;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: dimgray;
+  padding: 8px;
+  display: none;
+  margin: 5px;
+}
+
+.listItems:hover .userListForAdmin {
+  display: inline-block;
+}
+
+#msgs {
+  position: relative;
+  margin: auto;
+}
+
+h1 {
+  padding-left: 20px;
+}
+
+
+/*tasks*/
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Style the list items */
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+}
+
+
+/* Adding Task Page */
+
+.header {
+  background-color: lightsteelblue;
+  padding: 30px 40px;
+  color: white;
+}
+
+#myInput {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+
+.listItems {
+  width: 50vw;
+  height: 200px;
+  font-size: 26px;
+  text-align: center;
+  margin: auto;
+  padding: 80px;
+  color: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.2)),
+    rgb(255, 238, 248);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.listItemsForUsers {
+  width: 50vw;
+  height: 200px;
+  font-size: 26px;
+  text-align: center;
+  margin: auto;
+  padding: 80px;
+  color: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.2)),
+    url("../assets/ocean.jpeg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.listItems:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.9)),
+    url("../assets/confetti.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  color: white;
+}
+
+.listItemsForUsers:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.9)),
+    url("../assets/confetti.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  color: white;
+  padding: 30px;
+}
+
+.listItemsForUsers:hover .taskSignup {
+  display: block;
+}
+
+.updateButton {
+  display: inline-block;
+  float: right;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .8;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: lightblue;
+  background-image: url("https://image.flaticon.com/icons/svg/1159/1159633.svg");
+  background-position: center;
+  background-size: 65%;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  margin-top: -40px;
+}
+
+.deleteButton:hover {
+  background-color: red;
+}
+
+.updateButton:hover {
+  background-color: cornflowerblue;
+}
+
+.deleteButton {
+  display: inline-block;
+  float: right;
+  color: #000;
+  background-image: url("https://image.flaticon.com/icons/svg/61/61155.svg");
+  border-radius: 30px;
+  background-color: lightsteelblue;
+  opacity: .8;
+  width: 40px;
+  height: 40px;
+  top: 0px;
+  background-position: 51%;
+  background-size: 45%;
+  background-repeat: no-repeat;
+  margin: -40px;
+  z-index: 1000;
+}
+
+/*msgs*/
+
+h1 {
+  text-align: center;
+}
+
+#type {
+  border: 1px solid lightgray;
+  border-radius: 50px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+#textSend-btn {
+  background-image: url("../assets/forward.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  right: 30px;
+  bottom: 30px;
+  position: absolute;
+}
+
+.chatBox {
+  font-size: 26px;
+  margin: 50px;
+  text-align: left;
+  height: 300px;
+  overflow: scroll;
+}
+
+#eventInfo {
+  font-size: 26px;
+  margin: 50px;
+  margin-top: 20px;
+  text-align: left;
+  height: 300px;
+}
+
+.msg_container {
+  background-color: lightblue;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 5px;
+  position: relative;
+  text-align: left;
+  width: 250px;
+  font-size: 16px;
+}
+
+.msg_container2 {
+  background-color: lightgray;
+  border-radius: 25px;
+  margin-right: auto;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 5px;
+  position: relative;
+  text-align: left;
+  width: 250px;
+  font-size: 16px;
+}
+
+
+.goDashboard-btn {
+  width: 120px;
+  height: 30px;
+  background-color: lightsteelblue;
+  margin: auto;
+  border-radius: 35px;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#leftBox {
+  border: 3px solid lightsteelblue;
+  border-radius: 40px;
+  margin: 10px;
+  height: 700px;
+  width: 98%;
+  bottom: 0;
+}
+
+.chatContain {
+  overflow: scroll;
+  width: 100%;
+  height: 320px;
+  display: block;
+  border-radius: 50px;
+  bottom: 30px;
+}
+
+.goEdit-btn {
+  width: 120px;
+  height: 30px;
+  background-color: lightsteelblue;
+  border-radius: 35px;
+  border: none;
+  color: white;
+  padding: 5px;
+  bottom: 120px;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.goBack {
+  width: 120px;
+  height: 30px;
+  background-color: lightsteelblue;
+  position: absolute;
+  left: 50px;
+  top: 35px;
+  border-radius: 35px;
+  color: white;
+  border: none;
+  padding: 5px;
+  text-align: center;
+}
+
+.goBack:hover {
+  background-color: #b784a7;
+  width: 130px;
+}
+
+.goDelete-btn,
+.goRefresh-btn {
+  width: 125px;
+  height: 30px;
+  background-color: lightsteelblue;
+  color: white;
+  border: none;
+  border-radius: 35px;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.goDelete-btn:hover,
+.dashboard-btn-main:hover,
+.goRefresh-btn:hover,
+#goBack:hover,
+.goEdit-btn:hover,
+.goDashboard-btn:hover {
+  background-color: lightblue;
+  width: 130px;
+}
+
+
+#new {
+  text-align: center;
+  margin: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin: 30px;
+  font-weight: 600;
+}
+
+.eventInfoTitle {
+  font-size: 26px;
+  padding: 60px;
+  color: dimgray;
+  font-weight: 600;
+}
+
+.createNew-btn {
+  width: 200px;
+  height: 50px;
+  background-color: lightsteelblue;
+  right: 0;
+  top: 200px;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 35px;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.createNew-btn:hover {
+  background-color: #b784a7;
+}
